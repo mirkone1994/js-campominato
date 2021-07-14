@@ -10,7 +10,9 @@ console.log(numbers);
 var i = 0
 while (i < numbers.length) {
     var askNumber = parseInt(prompt("Inserisci un numero da 1 a 100"));
-    numbersUser.push(askNumber);
+    if (numbers.includes(askNumber)) {
+        alert("Hai perso");
+    } else numbersUser.push(askNumber);
     i++;
 }
 console.log(numbersUser);
