@@ -11,7 +11,8 @@ var i = 0
 while (i < numbers.length) {
     var askNumber = parseInt(prompt("Inserisci un numero da 1 a 100"));
     if (numbers.includes(askNumber)) {
-        alert("Hai perso");
+        alert("Hai perso")
+        break;
     } else numbersUser.push(askNumber);
     i++;
 }
