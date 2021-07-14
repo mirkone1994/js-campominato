@@ -13,7 +13,11 @@ while (i < numbers.length) {
     if (numbers.includes(askNumber)) {
         alert("Hai perso")
         break;
-    } else numbersUser.push(askNumber);
+    } else if (numbersUser.includes(askNumber)) {
+        askNumber;
+    } 
+    else numbersUser.push(askNumber);
+    console.log(numbersUser);
     i++;
 }
-console.log(numbersUser);
+
