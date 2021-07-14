@@ -1,5 +1,6 @@
 var numbers = [];
 var numbersUser = [];
+var score = 0;
 while (numbers.length < 16) {
     var sixteen = Math.floor(Math.random() * 100 ) + 1;
     if(numbers.indexOf(sixteen) === -1) {
@@ -17,7 +18,8 @@ while (i < numbers.length) {
         askNumber;
     } 
     else numbersUser.push(askNumber);
+    score += 1;
     console.log(numbersUser);
+    console.log(score);
     i++;
 }
-
