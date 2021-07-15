@@ -12,11 +12,11 @@ if (userDifficultChoice.toLowerCase() == "facile") {
     totalNumber += 50;
 } else prompt("Non hai scelto una difficoltà corretta");
 while (numbers.length < 16) {
-    var sixteen = Math.floor(Math.random() * 100 ) + 1;
+    var sixteen = Math.floor(Math.random() * totalNumber ) + 1;
     if(numbers.indexOf(sixteen) === -1) {
         numbers.push(sixteen);
     };
-}
+};
 console.log(numbers);
 var i = 0;
 while (i < totalNumber) {
@@ -35,6 +35,6 @@ while (i < totalNumber) {
     console.log(numbersUser);
     console.log(score);
     i++;
-}
+};
 scoreElement.innerHTML = "Il tuo punteggio finale è: " + score; 
 
