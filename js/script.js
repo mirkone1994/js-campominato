@@ -3,14 +3,14 @@ var numbersUser = [];
 var score = 0;
 var totalNumber = 0;
 var scoreElement = document.getElementById("score");
-var userDifficultChoice = prompt("Facile, medio o difficle?");
-if (userDifficultChoice == "facile") {
+var userDifficultChoice = prompt("Facile, media o difficle?");
+if (userDifficultChoice.toLowerCase() == "facile") {
     totalNumber += 100;
-} else if (userDifficultChoice == "medio") {
+} else if (userDifficultChoice.toLowerCase() == "media") {
     totalNumber += 80;
-} else if (userDifficultChoice == "difficile") {
+} else if (userDifficultChoice.toLowerCase() == "difficile") {
     totalNumber += 50;
-}
+} else prompt("Non hai scelto una difficoltà corretta");
 while (numbers.length < 16) {
     var sixteen = Math.floor(Math.random() * 100 ) + 1;
     if(numbers.indexOf(sixteen) === -1) {
