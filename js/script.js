@@ -9,11 +9,14 @@ while (numbers.length < 16) {
     };
 }
 console.log(numbers);
-var i = 0
-while (i < numbers.length) {
+var i = 0;
+while (i < 84) {
     var askNumber = parseInt(prompt("Inserisci un numero da 1 a 100"));
-    if (numbers.includes(askNumber)) {
-        alert("Hai perso")
+    if (askNumber < 1 || askNumber > 100 || isNaN(askNumber)) {
+        alert("Hai inserito un numero errato");
+        break;
+    } else if(numbers.includes(askNumber)) {
+        alert("Hai perso");
         break;
     } else if (numbersUser.includes(askNumber)) {
         askNumber;
